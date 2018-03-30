@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2: Calculator!</title>
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      Калькулятор
+    </div>
+    <div class="minimize"></div>
+    <div class="maximize"></div>
+    <div class="close" @click="window.close()">x</div> 
+    <div class="form-content">
+      <div class="menu-list">
+        <div class="main-menu-item view-item">Вид</div>
+        <div class="main-menu-item edit-item">Правка</div>
+        <div class="main-menu-item help-item">Справка</div>
+      </div>
+      <div class="calculator-content">
+        <div class="screen">
+          <div class="additionScreenText">{{additionScreenText}}</div>
+          {{screenText}}
+        </div>
+        <div class="buttons">
+          <table class="buttons-table">
+            <tr>
+              <td class="memory-button" @click="memoryClear()">MC</td>
+              <td class="memory-button" @click="memoryRead()">MR</td>
+              <td class="memory-button" @click="memorySet()">MS</td>
+              <td class="memory-button" @click="memoryAdd()">M+</td>
+              <td class="memory-button" @click="memorySubstract">M-</td>
+            </tr>
+            <tr>
+              <td class="action-button" @click="removeDigit()"><-</td>
+              <td class="action-button" @click="removeNumber()">CE</td>
+              <td class="action-button" @click="clearExpression()">C</td>
+              <td class="action-button" @click="reverseSign()">±</td>
+              <td class="action-button" @click="getSqrt()">√</td>
+            </tr>
+            <tr>
+              <td class="digit-button" @click="addDigit(7)">7</td>
+              <td class="digit-button" @click="addDigit(8)">8</td>
+              <td class="digit-button" @click="addDigit(9)">9</td>
+              <td class="action-button" @click="addOperation('/')">/</td>
+              <td class="action-button" @click="getPercents()">%</td>
+            </tr>
+            <tr>
+              <td class="digit-button" @click="addDigit(4)">4</td>
+              <td class="digit-button" @click="addDigit(5)">5</td>
+              <td class="digit-button" @click="addDigit(6)">6</td>
+              <td class="action-button" @click="addOperation('*')">*</td>
+              <td class="action-button" @click="getOneDivBy()">1/x</td>
+            </tr>
+            <tr>
+              <td class="digit-button" @click="addDigit(1)">1</td>
+              <td class="digit-button" @click="addDigit(2)">2</td>
+              <td class="digit-button" @click="addDigit(3)">3</td>
+              <td class="action-button" @click="addOperation('-')">-</td>
+              <td rowspan="2" class="action-button" @click="equal()">=</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="digit-button" @click="addDigit(0)">0</td>
+              <td class="digit-button" @click="addComma()">,</td>
+              <td class="action-button" @click="addOperation('+')">+</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bundle.js"></script>
+</body>
+</html>
