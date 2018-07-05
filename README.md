@@ -7,4 +7,4 @@ My windows 8.1 calculator web page
 
 # Результат
 
-<img src="http://i.piccy.info/i9/97682248ffdfb62beaf32bbff8d18f3d/1530820471/190601/1255865/_Calculator.jpg"></img>
+<img src="http://i.piccy.info/i9/e49437c9f95f833c00b7347de1d24f70/1530820581/187534/1255865/_Calculator.jpg"></img>
