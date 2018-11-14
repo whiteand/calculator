@@ -1,4 +1,7 @@
 # calculator
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/whiteand/calculator.svg)](https://greenkeeper.io/)
+
 My windows 8.1 calculator web page
 
 # Цель
